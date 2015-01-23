@@ -1,0 +1,368 @@
+@import url('bootstrap.min.css');
+
+/* modifications */
+
+#intro{
+  font-family:  'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+#top {
+  background-image: url(https://s3.amazonaws.com/nathanlamimages/images/oceanside.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+#top .container {
+  position: relative;
+  top: 32%;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+}
+
+#top .container h1 {
+  font-size: 5.5em;
+}
+#top .container h3{
+  color: white;
+}
+
+#top .scroll_down{
+  height: 80px;
+  width: 100px;
+  background-color: #222222;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  z-index:3;
+  right: 7%;
+}
+
+.nav .navbar-nav {
+  height: 320px;
+  width: 100px;
+  background-color: #222222;
+  display: block;
+  position: absolute;
+  top:100%;
+  text-align: center;
+  right: 7%;
+}
+.nav .nav-item {
+  height: 80px;
+  width: 100px;
+  padding: 0px;
+}
+.nav .nav-item:hover{
+  opacity: .50;
+}
+.active{
+  background-color: #EF4836!important;
+}
+.stick {
+  position: fixed!important;
+  top: 80px!important;
+}
+.navglyphicon{
+  color: white;
+  font-size: 30px!important;
+  padding-right: 2px;
+  padding-top: 25px;
+  z-index: 4;
+}
+.fa {
+  color: white;
+  font-size: 30px;
+  padding-right: 2px;
+  padding-top: 25px;
+  z-index: 4;
+}
+.contact-icons .icon{
+  color: white;
+  font-size: 4em;
+  text-align: center;
+}
+
+#top .scroll_down .glyphicon:hover{
+  opacity: .50;
+  top: 5px;
+}
+#contact {
+  padding-bottom: 25vh;
+}
+
+.background-white {
+  background-color: white;
+  padding-bottom: 85px;
+}
+
+.background-gray {
+  background-color: #DADFE1;
+  padding-bottom: 85px;
+}
+
+.background-darkblue {
+  background-color:#22313F;
+  height: 100vh;
+}
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #EF4836;
+  font-weight: 500;
+}
+#about img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lead {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #6C7A89;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+ p {
+  line-height: 1.4;
+  font-size: 18px;
+  color: #6C7A89;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+ }
+
+.box{
+  padding: 3% 10%;
+}
+
+.col-md-4 .col-md-8 {
+  text-align: left;
+}
+
+.centerimage{
+  margin: 0 auto;
+  width: 100px;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.subtitle{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.timespent {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.exp-title{
+  font-size: 17px;
+}
+.exp-info{
+  font-size: 16px;
+}
+.exp-desc {
+  font-size: 15px;
+}
+#experiences .row {
+  padding-bottom: 2%;
+}
+
+
+.contact-icons {
+  text-align: center;
+  margin: auto;
+}
+
+.left {
+  text-align: left;
+}
+.right{ 
+  text-align: right;
+}
+.skills{
+  text-align: left;
+}
+.icon{
+  padding-left: 9%;
+  padding-right: 9%;
+}
+.icon:hover{
+  opacity:.50;
+}
+
+/* From Eric Meyer's reset: http://meyerweb.com/eric/tools/css/reset/ */
+.project-image {
+  display:block;
+  margin:auto;
+}
+.photo-grid {
+  margin: 1em auto;
+  max-width: 1106px;
+  text-align: center;
+  padding-left: 0;
+}
+ 
+.photo-grid li {
+  border: 5px solid white;
+  display: inline-block;
+  margin: 1em;
+  width: 289px;
+}
+ 
+ 
+.photo-grid figure {
+  height: 163px;
+  overflow: hidden;
+  position: relative;
+  width: 289px;
+}
+
+
+
+/* end */
+
+.photo-grid li:hover figcaption {
+  opacity: 1;
+}
+
+.photo-grid img {
+  display: block;
+  height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  max-width: 100%;
+}
+ 
+.photo-grid li:hover img {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.photo-grid figcaption {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+  z-index: 100;
+}
+
+.photo-grid figcaption p {
+  display: table-cell;
+  top: -40px;
+  width: 289px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  vertical-align: middle;
+  font-size: 1.5em;
+  color: #D2D7D3;
+}
+
+.row {
+  padding-right: 15px;
+}
+
+.fotos{
+  padding-bottom: 100px;
+}
+
+#about{ 
+  overflow:hidden;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .nav .navbar-nav {
+    display: none;
+  }
+/*https://s3.amazonaws.com/nathanlamimages/images/oceanside_mobile.jpg)*/
+  #top {
+    background-image: url(oceanside.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+  }
+
+  #top .container h1 {
+  font-size: 4em;
+  }
+
+  .project-image {
+    display:block;
+    margin:auto;
+  }
+
+  .photo-grid {
+    margin: 1em auto;
+    max-width: 1106px;
+    text-align: center;
+    padding-left: 0px;
+  }
+   
+  .photo-grid li {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+   
+  .photo-grid figure {
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #top .container {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    max-width: 100%;
+    color: white;
+  }
+
+  #top .scroll_down{
+    height: 80px;
+    width: 100%;
+    background-color: #222222;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    z-index:3;
+    right: 0px;
+  }
+
+  #fun .row {
+    margin-left: 0px;
+  }
+
+ 
+}
+/*# sourceMappingURL=bootstrap.css.map */

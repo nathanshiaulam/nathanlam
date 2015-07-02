@@ -5,22 +5,22 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+- url: /favicon1\.ico
+  static_files: favicon1.ico
+  upload: favicon1\.ico
 
 - url: /css
   static_dir: css
 
 - url: /Font-Awesome-master
   static_dir: Font-Awesome-master
-  
+
 - url: /Hover-master
   static_dir: Hover-master
 
 - url: /js
   static_dir: js
-  
+
 - url: /fonts
   static_dir: fonts
 

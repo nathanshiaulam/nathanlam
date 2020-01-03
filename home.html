@@ -28,29 +28,37 @@
 				<hr style="width: 78%; background: #fff; margin: auto;">
 				<h3>Welcome to my portfolio.</h3>
 			</div>
-			<a href='#about' class="scroll_down smoothScroll">
+			<a href="#about" class="scroll_down smoothScroll">
 				<span class="glyphicon glyphicon-hand-down navglyphicon"></span>
 			</a>
 		</div>
 		<div class="nav navbar-default">
 			<ul class="nav navbar-nav">
-				<li><a href='#about' class="nav-item smoothScroll first active">
+				<li>
+					<a href="#about" class="nav-item smoothScroll first active">
 					<span class="glyphicon glyphicon-user navglyphicon"></span>
-					</a></li>
-				<li><a href='#experiences' class="nav-item smoothScroll second">
+					</a>
+				</li>
+				<li>
+					<a href="#experiences" class="nav-item smoothScroll second">
 					<span class="glyphicon glyphicon-briefcase navglyphicon"></span>
-					</a></li>
-				<li><a href='#fun' class="nav-item smoothScroll third">
+					</a>
+				</li>
+				<li>
+					<a href="#fun" class="nav-item smoothScroll third">
 					<span class="fa fa-laptop navglyphicon"></span>
-					</a></li>
-				<li><a href='#contact' class="nav-item smoothScroll fourth">
+					</a>
+				</li>
+				<li>
+					<a href="#contact" class="nav-item smoothScroll fourth">
 					<span class="fa fa-comments navglyphicon"></span>
-					</a></li>
+					</a>
+				</li>
 			</ul>
 		</div>
 
 		<div class="background-white">
-			<div id="about" class="container box">
+			<div id="about" name="about" class="container box">
 				<h2>About</h2>
 				<img src="https://s3.amazonaws.com/nathanlamimages/images/nathanlam.jpg">
 				<p class="lead">Student<>Developer</p>
@@ -79,7 +87,7 @@
 			</div>
 		</div>
 		<div class="background-gray">
-			<div id="experiences" class="container box">
+			<div id="experiences" name="experiences" class="container box">
 				<h2>Resume</h2>
 				<hr style="width:100%; border-color:#6C7A89; opacity: .6; margin-top: 20px;">
 				<h3 class="subtitle">Education</h3>
@@ -184,7 +192,7 @@
 			</div>
 		</div>
 		<div class="background-white fotos">
-			<div id="fun" class="container box">
+			<div id="fun" name="fun" class="container box">
 			<h2>Projects</h2>
 				<hr style="width:100%; border-color:#6C7A89; opacity: 1; margin-top: 20px;">
 				<div class="row trigger">
@@ -263,7 +271,7 @@
 			</div>
 		</div>
 		<div class="background-darkblue">
-			<div id="contact" class="container box">
+			<div id="contact" name="contact" class="container box">
 				<h2 style="color: white;">Contact</h2>
 				<hr style="width:100%; border-color:#6C7A89; opacity: .6; margin-top: 20px;">
 			</div>
@@ -277,7 +285,6 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="js/smoothscroll.js"></script>
 		<script type="text/javascript" src="css/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script type="text/javascript" src="css/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="css/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
@@ -322,14 +329,14 @@
 						$(".first").addClass("active");
 						$(".nav-item").not($(".first")).removeClass("active");
 					}
-					if (windowpos >= experiencespos.top && windowpos - 10 < funpos.top) {
+					if (windowpos + 10 >= experiencespos.top && windowpos - 10 < funpos.top) {
 						$(".second").addClass("active");
 						$(".nav-item").not($(".second")).removeClass("active");
 					}
 					else {
 						$(".second").removeClass("active");
 					}
-					if (windowpos + 10>= funpos.top && windowpos - 10 < contactpos.top) {
+					if (windowpos + 10 >= funpos.top && windowpos - 10 < contactpos.top) {
 						$(".third").addClass("active");
 						$(".nav-item").not($(".third")).removeClass("active");
 					}
